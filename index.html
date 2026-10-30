@@ -23,6 +23,34 @@ body{background-color:#0d0e0e;background-image:linear-gradient(90deg,transparent
 @media(max-width:800px){.header{top:12px}.header .wrap{height:62px;padding:0 15px}.nav{top:72px;left:18px;right:18px;border:1px solid var(--glass-border);border-radius:14px;background:rgba(25,26,24,.97);box-shadow:0 20px 40px #0009}.hero,.hero .wrap{min-height:660px}.hero .wrap{padding-top:80px}.hero-copy{flex-basis:auto;max-width:510px}.hero-art{width:100%;opacity:.55}.hero:after{background:linear-gradient(90deg,#101313f5 0%,#101313bc 60%,#10131370),linear-gradient(0deg,#0d0e0e,transparent 40%)}.steps,.about{grid-template-columns:1fr;gap:50px}.art-frame{width:min(100% - 20px,500px);height:auto;aspect-ratio:.95}.about-art{width:min(100%,460px);height:auto;aspect-ratio:1 / 1.08}.comparison{margin-top:35px}.services-grid{gap:12px}.service{min-height:235px}.section{padding:75px 0}.footer:after{bottom:-35px}}
 @media(max-width:430px){.hero h1{font-size:clamp(36px,10vw,42px)}.compare-card{padding:27px 24px}.art-frame{height:auto}.about-art{height:auto}.portrait-secondary{bottom:25px}.step-bottom{gap:20px}.footer:after{bottom:-20px}}
 @supports not (backdrop-filter:blur(1px)){.header .wrap,.compare-card,.step,.service,.banner,.stat,dialog{background:#222321}}
+/* Auditoria de diagramação: dimensões estimadas proporcionalmente à captura. */
+@media(min-width:801px){
+  h2{font-size:clamp(36px,2.8vw,42px);line-height:1.12}
+  .hero,.hero .wrap{min-height:clamp(690px,53vw,760px)}
+  .hero-copy{flex-basis:49%;max-width:530px}
+  .hero h1{font-size:clamp(44px,3.6vw,52px);line-height:1.1;letter-spacing:-.025em}
+  .hero-copy .sub{max-width:395px;margin:20px 0 29px}
+  .comparison{max-width:none;margin-top:43px}
+  .compare-card{padding:31px 32px}
+  .steps{grid-template-columns:minmax(0,.86fr) minmax(0,1fr);gap:clamp(55px,5vw,75px)}
+  .art-frame{aspect-ratio:2 / 3}
+  .step{min-height:218px;display:flex;flex-direction:column;padding:23px}
+  .step h3{margin:37px 0 8px}
+  .step-grid{gap:14px}
+  .service{min-height:335px;padding:26px}
+  .service-icon{margin-bottom:35px}
+  .about{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:70px}
+  .about-art{aspect-ratio:1 / 1.25}
+  .faq{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:90px}
+  .faq h2{max-width:350px}
+}
+.eyebrow{margin-bottom:13px;line-height:1.35}.heading-sub{max-width:445px;line-height:1.6;margin-top:15px}
+.compare-card h3{font-size:26px;padding-bottom:18px}.compare-card ul{padding:13px 0 3px}.compare-card li{line-height:1.5;padding:8px 0}.compare-card .btn{margin-top:14px}
+.step .num{line-height:1}.step h3{font-size:21px}.step p,.service p,.review p{line-height:1.55}.service h3{font-size:24px;line-height:1.15}.service p{margin:15px 0 22px}.service a{font-size:11px;min-height:44px;display:flex;align-items:center;justify-content:space-between}.service a span{float:none}
+.reviews{margin-top:48px}.review{display:flex;flex-direction:column}.review p{flex:1;min-height:0;margin-bottom:20px}.stars{align-self:flex-start}.person strong{font-size:13px}.person small{font-size:10px;color:#b1b0ab}
+.about .sub{line-height:1.68;margin-top:16px}.about .btn{min-height:44px;margin-top:24px;padding:0;background:transparent;border:0;box-shadow:none;color:var(--gold)}
+.faq-list summary{font:400 16px/1.4 'Playfair Display',Georgia,serif;min-height:68px;padding:17px 0}.faq-list details p{font-size:14px;line-height:1.6}
+@media(max-width:800px){.eyebrow{font-size:11px}.logos-label,.benefits,.footer small{font-size:10px}.nav a{font-size:12px}.hero-copy .sub{max-width:400px}.about .sub{font-size:14px}.faq-list summary{font-size:16px}.step h3{margin-top:17px}.service-icon{margin-bottom:24px}}
 </style></head><body>
 <!-- As ilustrações são SVG editáveis, criadas em código; não são recortes da referência. -->
 <header class="header"><div class="wrap"><a class="brand" href="#inicio" aria-label="Brenda Prinsk, início"><span class="monogram">BP</span><span><strong>BRENDA PRINSK</strong><small>ADVOGADA</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu ☰</button><nav id="nav" class="nav" aria-label="Navegação principal"><a href="#etapas">ETAPAS</a><a href="#servicos">SERVIÇOS</a><a href="#sobre">QUEM SOU EU?</a><a class="contact" href="#contato">CONTATO ↗</a></nav></div></header>
