@@ -51,6 +51,18 @@ body{background-color:#0d0e0e;background-image:linear-gradient(90deg,transparent
 .about .sub{line-height:1.68;margin-top:16px}.about .btn{min-height:44px;margin-top:24px;padding:0;background:transparent;border:0;box-shadow:none;color:var(--gold)}
 .faq-list summary{font:400 16px/1.4 'Playfair Display',Georgia,serif;min-height:68px;padding:17px 0}.faq-list details p{font-size:14px;line-height:1.6}
 @media(max-width:800px){.eyebrow{font-size:11px}.logos-label,.benefits,.footer small{font-size:10px}.nav a{font-size:12px}.hero-copy .sub{max-width:400px}.about .sub{font-size:14px}.faq-list summary{font-size:16px}.step h3{margin-top:17px}.service-icon{margin-bottom:24px}}
+/* Auditoria de mancha de texto: compactação proporcional no desktop. */
+@media(min-width:801px){
+ .hero h1{font-size:clamp(42px,3.35vw,48px);line-height:1.10;letter-spacing:-.025em}
+ .hero-copy{max-width:505px;flex-basis:47%}
+ .hero-copy .sub{max-width:365px;line-height:1.58}
+ h2{font-size:clamp(34px,2.65vw,40px)}
+ .heading-sub{max-width:435px;line-height:1.55}
+ .step p{max-width:190px;line-height:1.5}
+ .about .sub{font-size:13.5px;line-height:1.58;max-width:520px}
+ .faq h2{max-width:300px}
+}
+@media(max-width:800px){.hero-copy .sub{line-height:1.6}.about .sub{line-height:1.6}}
 </style></head><body>
 <!-- As ilustrações são SVG editáveis, criadas em código; não são recortes da referência. -->
 <header class="header"><div class="wrap"><a class="brand" href="#inicio" aria-label="Brenda Prinsk, início"><span class="monogram">BP</span><span><strong>BRENDA PRINSK</strong><small>ADVOGADA</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu ☰</button><nav id="nav" class="nav" aria-label="Navegação principal"><a href="#etapas">ETAPAS</a><a href="#servicos">SERVIÇOS</a><a href="#sobre">QUEM SOU EU?</a><a class="contact" href="#contato">CONTATO ↗</a></nav></div></header>
